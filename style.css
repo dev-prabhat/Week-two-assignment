@@ -56,3 +56,30 @@
 .icons {
   color: var(--icon-color);
 }
+
+/* --------------------Nav-bar------------------------- */
+
+.nav-container {
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: var(--text-color);
+}
+
+.nav-link {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-pills {
+  text-decoration: none;
+  color: var(--bg-color);
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+.nav-pills:hover {
+  cursor: pointer;
+  background-color: #f5f3ff42;
+  border-radius: 15px;
+}
