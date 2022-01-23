@@ -10,14 +10,12 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <title>Badge Component</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/utile.css" />
     <link rel="stylesheet" href="/nav.css" />
-    <title>Header Component</title>
   </head>
   <body>
-    <!------------------------ Navigation Bar ------------------------------>
-
     <nav class="nav-container">
       <ul>
         <li class="nav-link"><a href="/" class="nav-pills">Card</a></li>
@@ -38,18 +36,31 @@
       </ul>
     </nav>
 
-    <!------------------------ Header Component ------------------------------>
-
     <div class="container">
-      <header class="header">
-        <i class="fas fa-bars ham icons"></i>
-        <h1 class="title">Varanasi, UP</h1>
-        <div class="options">
-          <i class="fas fa-download option-item icons"></i>
-          <i class="fas fa-print option-item icons"></i>
-          <i class="fas fa-bookmark option-item icons"></i>
-        </div>
-      </header>
+      <div class="badge">
+        <h1 class="text">Text With a badge</h1>
+        <h2 class="number">4</h2>
+      </div>
+
+      <div class="badge">
+        <h1 class="text">Text With larger badge</h1>
+        <h2 class="number number--larger">10</h2>
+      </div>
+
+      <div class="badge">
+        <button class="badge--btn">Action</button>
+        <h2 class="number number--btn">2</h2>
+      </div>
+
+      <div class="badge">
+        <button class="badge--btn">Hide</button>
+        <h2 class="number">4</h2>
+      </div>
+
+      <div class="badge">
+        <i class="fas fa-igloo icon"></i>
+        <h2 class="number">6</h2>
+      </div>
     </div>
   </body>
 </html>

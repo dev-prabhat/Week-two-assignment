@@ -1,14 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
-  --bg-color: #e2e8f0;
   --icon-color: #334155;
-  --hover-color: #d8b4fe;
+  --hover-color: #cbd5e1;
   --drawer-bg: white;
-  --nav-bg: #6200ee;
 }
 
 .container {
@@ -21,7 +14,6 @@
 .drawer {
   width: 300px;
   margin: auto;
-  /* border: 2px solid red; */
   background-color: var(--drawer-bg);
 }
 
@@ -31,7 +23,7 @@
   padding: 10px;
 }
 
-.title p {
+.sub--title {
   color: var(--icon-color);
 }
 
@@ -56,31 +48,4 @@
 
 .icons {
   padding-right: 25px;
-}
-
-/* --------------------Nav-bar------------------------- */
-
-.nav-container {
-  width: 30%;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: var(--nav-bg);
-}
-
-.nav-link {
-  display: inline;
-  margin: 0 10px;
-}
-
-.nav-pills {
-  text-decoration: none;
-  color: var(--bg-color);
-  font-size: 1.25rem;
-  padding: 10px;
-}
-
-.nav-pills:hover {
-  cursor: pointer;
-  background-color: #f5f3ff42;
-  border-radius: 15px;
 }

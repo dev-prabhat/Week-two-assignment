@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utile.css" />
+    <link rel="stylesheet" href="nav.css" />
     <title>Card Components</title>
   </head>
   <body>
@@ -30,32 +32,140 @@
             >Snackbar</a
           >
         </li>
+        <li class="nav-link">
+          <a href="/Components/Badge/badge.html" class="nav-pills">Badges</a>
+        </li>
       </ul>
     </nav>
 
-    <!------------------------ Card Component ------------------------------>
+    <!------------------------ Card Component Basic------------------------------>
 
     <div class="container">
       <div class="card">
         <img
           src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
           alt="an_image"
-          class="main_image"
+          class="main--image"
         />
-        <div class="description">
-          <h2>Our Changing Planet</h2>
-          <h3>by Kurt Wagner</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-            reiciendis repellat rem, harum soluta neque.
-          </p>
+        <header class="header">
+          <h1 class="title">Our Changing Planet</h1>
+          <h2 class="sub-title">by Kurt Wagner</h2>
+        </header>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis
+          repellat rem, harum soluta neque.
+        </p>
+        <div class="options options-display">
+          <button class="btn">READ</button>
+          <button class="btn">BOOKMARK</button>
+          <span><i class="far fa-heart icon"></i></span>
+          <span><i class="fas fa-share-alt icon"></i></span>
+          <span><i class="fas fa-ellipsis-v icon"></i></span>
         </div>
-        <div class="options">
-          <h5>READ</h5>
-          <h5>BOOKMARK</h5>
-          <span><i class="far fa-heart icons"></i></span>
+      </div>
+
+      <!------------------------ Card Component Basic w/ Header------------------------------>
+
+      <div class="card">
+        <header class="header">
+          <h1 class="title">Our Changing Planet</h1>
+          <h2 class="sub-title">by Kurt Wagner</h2>
+        </header>
+        <img
+          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
+          alt="an_image"
+          class="main--image"
+        />
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis
+          repellat rem, harum soluta neque.
+        </p>
+        <div class="options options-display">
+          <button class="btn">READ</button>
+          <button class="btn">BOOKMARK</button>
+          <span><i class="far fa-heart icon"></i></span>
+          <span><i class="fas fa-share-alt icon"></i></span>
+          <span><i class="fas fa-ellipsis-v icon"></i></span>
+        </div>
+      </div>
+
+      <!------------------------ Card Component Basic w/ Only Buttons------------------------------>
+
+      <div class="card">
+        <img
+          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
+          alt="an_image"
+          class="main--image"
+        />
+        <header class="header">
+          <h1 class="title">Our Changing Planet</h1>
+          <h2 class="sub-title">by Kurt Wagner</h2>
+        </header>
+
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis
+          repellat rem, harum soluta neque.
+        </p>
+
+        <div class="options options-btn">
+          <button class="btn">READ</button>
+          <button class="btn">BOOKMARK</button>
+          <!-- <span><i class="far fa-heart icons"></i></span>
           <span><i class="fas fa-share-alt icons"></i></span>
-          <span><i class="fas fa-ellipsis-v icons"></i></span>
+          <span><i class="fas fa-ellipsis-v icons"></i></span> -->
+        </div>
+      </div>
+
+      <!------------------------ Card Component Basic w/ Only Icons------------------------------>
+
+      <div class="card">
+        <img
+          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
+          alt="an_image"
+          class="main--image"
+        />
+        <header class="header">
+          <h1 class="title">Our Changing Planet</h1>
+          <h2 class="sub-title">by Kurt Wagner</h2>
+        </header>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis
+          repellat rem, harum soluta neque.
+        </p>
+        <div class="options options-icons">
+          <!-- <button class="btn">READ</button>
+          <button class="btn">BOOKMARK</button> -->
+          <span><i class="far fa-heart icon"></i></span>
+          <span><i class="fas fa-share-alt icon"></i></span>
+          <span><i class="fas fa-ellipsis-v icon"></i></span>
+        </div>
+      </div>
+
+      <!------------------------ Card Component Horizontal Image and Text------------------------------>
+
+      <div class="card card--change">
+        <div class="info">
+          <img
+            src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
+            alt="an_image"
+            class="main--image main--image--modified"
+          />
+          <header class="header">
+            <h1 class="title">Our Changing Planet</h1>
+            <h2 class="sub-title">by Kurt Wagner</h2>
+          </header>
+        </div>
+
+        <!-- <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis
+          repellat rem, harum soluta neque.
+        </p> -->
+        <div class="options">
+          <button class="btn">READ</button>
+          <button class="btn">BOOKMARK</button>
+          <span><i class="far fa-heart icon"></i></span>
+          <span><i class="fas fa-share-alt icon"></i></span>
+          <span><i class="fas fa-ellipsis-v icon"></i></span>
         </div>
       </div>
     </div>

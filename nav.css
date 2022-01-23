@@ -1,0 +1,29 @@
+:root {
+  --text-color: white;
+  --nav-bg: #1e293b;
+}
+
+.nav-container {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: var(--nav-bg);
+}
+
+.nav-link {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.nav-pills {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.nav-pills:hover {
+  cursor: pointer;
+  background-color: #f5f3ff42;
+  border-radius: 2%;
+}

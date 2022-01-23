@@ -1,0 +1,52 @@
+:root {
+  --bg-color: #1e293b;
+  --text-color: aliceblue;
+}
+
+.container {
+  display: flex;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+
+  position: relative;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.number {
+  position: absolute;
+  top: -3px;
+  right: 2px;
+
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  border-radius: 50%;
+  padding: 0 0.5rem;
+}
+
+.number--larger {
+  padding: 0.25rem;
+}
+
+.number--btn {
+  right: -10px;
+}
+
+.badge--btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
